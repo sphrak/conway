@@ -17,12 +17,6 @@ class Map(
         return !array[x][y]
     }
 
-    //        if (xPos < 0 || xPos >= columns) {
-    //            return true
-    //        }
-    //        if (yPos < 0 || yPos >= rows) {
-    //            return true
-    //        }
     private fun isOutOfBounds(
         x: Int,
         y: Int
@@ -55,30 +49,4 @@ class Map(
         }
         return sb.toString()
     }
-
-//    fun neighbours(x: Int, y: Int): Int {
-//        var neighbors = 0
-//        for (i in -1..1) {
-//            for (j in -1..1) {
-//                val x1 = x + i
-//                val y1 = y + j
-//
-//                // Skip position of the tested cell itself
-//                if (x1 == x && y1 == y) {
-//                    continue
-//                }
-//
-//                // Skip out of bounds
-//                if (isOutOfBounds(x1, y1)) {
-//                    continue
-//                }
-//
-//                // Increase neighbor count if not empty
-//                if (!isEmpty(x1, y1)) {
-//                    neighbors++
-//                }
-//            }
-//        }
-//        return neighbors
-//    }
 }

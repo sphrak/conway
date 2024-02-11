@@ -6,7 +6,6 @@ import com.badlogic.gdx.graphics.glutils.ShapeRenderer
 
 class GridRenderer(
     private val camera: Camera,
-    // private val map: Map,
     private val blockSize: Float
 ) {
 
